@@ -2016,14 +2016,6 @@ function applyFilters() {
   noResults.classList.toggle('show', visibleCount === 0);
 }
 
-// QR
-function copyURL() {
-  navigator.clipboard.writeText(window.location.href).then(() => {
-    const btn = document.querySelector('.qr-copy-btn');
-    btn.textContent = '✅ コピーしました！';
-    setTimeout(() => btn.textContent = '🔗 URLをコピー', 2000);
-  });
-}
 
 // Furniture accordion
 function toggleFurniture() {
